@@ -24,7 +24,7 @@ class Motor():
         self.bc_odom = tf.TransformBroadcaster()
 
         self.x, self.y, self.th = 0.0, 0.0, 0.0
-        self.vx, self.vth = 0.0, 0,0
+        self.vx, self.vth = 0.0, 0.0
 
         self.cur_time = rospy.Time.now()
         self.last_time = self.cur_time
