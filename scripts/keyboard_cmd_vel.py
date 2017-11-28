@@ -15,8 +15,8 @@ while not rospy.is_shutdown():
     direction = raw_input('k: forward, j: backward, h: left, l: right, return: stop > ')
     if 'k' in direction: vel.linear.x = 0.15
     if 'j' in direction: vel.linear.x = -0.15
-    if 'h' in direction: vel.angular.z = 3.14/2
-    if 'l' in direction: vel.angular.z = -3.14/2
+    if 'h' in direction: vel.angular.z = 3.14
+    if 'l' in direction: vel.angular.z = -3.14
     print vel
     pub.publish(vel)
 
